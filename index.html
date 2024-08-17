@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="post">
+        <h3>Required field <sup>*</sup></h3>
+
+        <div class="col1">
+            <label for="fname">First name<sup>*</sup></label>
+            <input type="text" id="fname" required>
+
+            <label for="lname">Last name<sup>*</sup></label>
+            <input type="text" id="lname" required>
+
+            <label for="phone">Phone number <sup>*</sup>(in case of delivery questions)</label>
+            <input type="text" id="phone" required>
+
+            <label for="email">Email address for order notification<sup>*</sup></label>
+            <input type="email" id="email" required>
+
+        </div>
+
+        <div class="col2">
+            <label for="address">Stress address<sup>*</sup></label>
+            <input type="text" id="address" required>
+            
+            <label for="optional">Apt,suite,etc(optional)</label>
+            <input type="text" id="optional">
+            
+            <label for="city">City<sup>*</sup></label>
+            <input type="text" id="city" required>
+            
+            <div class="new">
+            <label for="state">State<sup>*</sup></label>
+            <select name="state" id="state">
+                <option value="maryland">Maryland</option>
+                <option value="nepal">Nepal</option>
+                <option value="usa">USA</option>
+                <option value="china">China</option>
+            </select>
+        </div>
+        <div class="new1">
+            <label for="zip">ZIP code<sup>*</sup></label>
+            <input type="text" id="zip">
+            </div>
+        </div>
+
+        <div class="aboutme">
+            <input type="checkbox" name="aboutme" id="aboutme" checked>
+            <label for="aboutme">Email me about hot items, great savings, and more.</label>
+        </div>
+       
+
+        <input type="submit" value="Continue">
+    </form>
+</body>
+
+</html>
