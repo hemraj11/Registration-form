@@ -1,0 +1,89 @@
+<style>
+
+h2,div{
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+}
+
+form{
+border:2px solid black;
+border-radius:4%;
+margin:12px;
+padding:12px;
+background:#6c7e91;
+}
+
+input{
+width:422px;
+border:2px solid black;
+border-radius:5%;
+}
+
+h2::before,
+h2::after{
+content: "";
+flex:1;
+border-bottom: 2px solid white;
+margin:0px 22px ;
+}
+
+input{
+display:inline-block;
+margin:12px;
+padding:12px;
+}
+
+.submit{
+background:green; 
+color:white; 
+font-size:16px;
+box-shadow:2px 2px 28px  white;
+}
+.submit:hover{
+color:black;
+background-color:white;
+transition:all 3s ease-in-out;
+box-shadow:2px 2px 28px  yellow;
+}
+
+a{
+color:white;
+}
+
+</style>
+
+<form>
+<h2>Register</h2>
+<div> Create your account. It's free and only takes a minute.</div>
+<span>
+<input type="text" placeholder="First Name">
+<input type="text" placeholder="Last Name">
+<span>
+
+<input type="email" placeholder="Email"><br>
+<input type="password" placeholder="Password"><br>
+<input type="password" placeholder="Confirm Password">
+<br>
+<input type="checkbox" id="signup" style="width:12px;">
+<label for="signup">I accept <span style="color:green;"> Terms of Use </span> & <span style="color:green;"> Privacy Policy</span>.</label>
+<br>
+<div > 
+<input type="submit" value="Register Now" class="submit">
+</div>
+
+</form> 
+<br>
+
+<div>
+Already have an account? <a href="#">Sign in</a>
+</div>
